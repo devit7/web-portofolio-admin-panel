@@ -8,6 +8,7 @@ use App\Http\Controllers\ProglanguageController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\programprojectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,6 +78,15 @@ Route::post('/project/store', [ProjectController::class, 'store'])->name('projec
 Route::get('/project/{id}/edit', [ProjectController::class, 'edit'])->name('project.edit');
 Route::put('/project/{id}', [ProjectController::class, 'update'])->name('project.update');
 Route::delete('/project/{id}', [ProjectController::class, 'destroy'])->name('project.destroy');
+
+// Router Untuk Programproject
+Route::get('/programproject', [programprojectController::class, 'read'])->name('programproject.read');
+Route::get('/programproject/create', [programprojectController::class, 'create'])->name('programproject.create');
+Route::post('/programproject/store', [programprojectController::class, 'store'])->name('programproject.store'); // Changed the URL to /programproject/store
+Route::get('/programproject/{id}/edit', [programprojectController::class, 'edit'])->name('programproject.edit');
+Route::put('/programproject/{id}', [programprojectController::class, 'update'])->name('programproject.update');
+Route::delete('/programproject/{id}', [programprojectController::class, 'destroy'])->name('programproject.destroy');
+
 
 
 ?>

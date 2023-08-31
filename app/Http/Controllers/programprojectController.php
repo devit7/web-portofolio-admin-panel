@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\programproject;
+use App\Models\Project;
 
 class programprojectController extends Controller
 {
@@ -16,7 +17,8 @@ class programprojectController extends Controller
         //check if the user is logged in
         if (session()->has('user')) {
             $programproject = programproject::all();
-            return view('programproject', compact('programproject'));
+            $datanama = Project::all();
+            return view('programproject', compact('programproject', 'datanama'));
         }else{
             return redirect()->route('login');
         }

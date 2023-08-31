@@ -452,11 +452,19 @@
                           >Proglang</a
                         >
                       </li>
+                      
                       <li>
                         <a
                           href="/project"
                           class="flex  items-center p-2 pl-11 w-full text-base font-medium  rounded-lg transition duration-75 group  text-white hover:bg-gray-700"
                           >Project</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/programproject"
+                          class="flex  items-center p-2 pl-11 w-full text-base font-medium  rounded-lg transition duration-75 group  text-white hover:bg-gray-700"
+                          >ProgProject</a
                         >
                       </li>
                       <li>
