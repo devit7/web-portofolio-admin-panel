@@ -23,22 +23,17 @@
             @csrf
             
             <div class="relative z-0 w-full mb-6 group">
-                <label for="underline_select" class="sr-only">Underline select</label>
-                <select id="underline_select" name="level" class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                <label for="level_select" class="sr-only">Underline select</label>
+                <select id="level_select" name="level" class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
                     <option selected>Choose a Level</option>
                     <option value="1">Competition</option>
                     <option value="2">Certification</option>
                 </select>
             </div>
             <div class="relative z-0 w-full mb-6 group">
-                <label for="underline_select" class="sr-only">Underline select</label>
-                <select id="underline_select" name="category" class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                    <option selected>Choose a category</option>
-                    <option value="1">International --- Competition</option>
-                    <option value="2">National ---- Competition</option>
-                    <option value="3">Challenge ~~~ Certification</option>
-                    <option value="4">Course ~~~ Certification</option>
-                    <option value="5">Internship ~~~ Certification</option>
+                <label for="categorySelect" class="sr-only">Underline select</label>
+                <select id="categorySelect" name="category"class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+
                 </select>
             </div>
             <div class="relative z-0 w-full mb-6 group">
@@ -78,7 +73,7 @@
             </thead>
             <tbody>
                 @foreach ($kda as $kd)
-                <tr>
+                <tr >
                     <td>{{ $kd->id }}</td>
                     <td>{{ $kd->category }}</td>
                     <td>{{ $kd->level}}</td>
@@ -158,6 +153,29 @@
 <!--Datatables -->
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#level_select').change(function() {
+            var selectedLevel = $(this).val();
+            var categorySelect = $('#categorySelect');
+
+            categorySelect.empty(); // Clear existing options
+
+            if (selectedLevel === '1') { // Competition
+                categorySelect.append('<option value="1">International</option>');
+                categorySelect.append('<option value="2">National</option>');
+            } else if (selectedLevel === '2') { // Certification
+                categorySelect.append('<option value="3">Challenge</option>');
+                categorySelect.append('<option value="4">Course</option>');
+                categorySelect.append('<option value="5">Internship</option>');
+            }
+
+            // Optionally, you can add a default option
+            categorySelect.prepend('<option value="" selected>Choose a category</option>');
+        });
+    });
+</script>
+
 <script>
     //jangan di rubah
     $(document).ready(function() {

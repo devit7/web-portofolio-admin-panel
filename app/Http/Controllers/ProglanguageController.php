@@ -14,9 +14,14 @@ class ProglanguageController extends Controller
     }
     //read
     public function read()
-    {
-        $proglanguage = Proglanguage::all();
-        return view('proglanguage', compact('proglanguage'));
+    {   
+        //check if the user is logged in
+        if (session()->has('user')) {
+            $proglanguage = Proglanguage::all();
+            return view('proglanguage', compact('proglanguage'));
+        }else{
+            return redirect()->route('login');
+        }
     }
     //edit
     public function edit($id)

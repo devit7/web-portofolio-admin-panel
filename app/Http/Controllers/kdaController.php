@@ -15,8 +15,13 @@ class kdaController extends Controller
     //read
     public function read()
     {
-        $kda = kda::all();
-        return view('kda', compact('kda'));
+        //check if the user is logged in
+        if (session()->has('user')) {
+            $kda = kda::all();
+            return view('kda', compact('kda'));
+        }else{
+            return redirect()->route('login');
+        }
     }
     //edit
     public function edit($id)

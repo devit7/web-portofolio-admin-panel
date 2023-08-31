@@ -51,7 +51,7 @@
             </thead>
             <tbody>
                 @foreach ($proglanguage as $pl)
-                <tr>
+                <tr >
                     <td>{{ $pl->id }}</td>
                     <td>{{ $pl->nama }}</td>
                     <td>

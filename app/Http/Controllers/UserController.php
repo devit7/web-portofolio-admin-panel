@@ -14,8 +14,14 @@ class UserController extends Controller
 
     public function read()
     {
-        $user = User::all();
-        return view('user', compact('user'));
+        //check if the user is logged in
+        if (session()->has('user')) {
+            $user = User::all();
+            return view('user', compact('user'));
+        }else{
+            return redirect()->route('login');
+        }
+
     }
 
     public function edit($id)

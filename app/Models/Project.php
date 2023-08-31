@@ -9,5 +9,5 @@ class Project extends Model
 {
     use HasFactory;
     protected $table = 'project'; // Nama tabel yang sesuai dengan migrasi
-    protected $fillable = ['title', 'description', 'image', 'program'];
+    protected $fillable = ['title', 'description', 'image'];
 }

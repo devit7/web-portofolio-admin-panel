@@ -42,7 +42,7 @@
             <h2 class="text-2xl font-semibold ">About Page</h2>
 			<table id="example" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
 				<thead>
-					<tr>
+					<tr >
 						<th data-priority="1">Id</th>
                         <th data-priority="2">Deskripsi</th>
                         <th data-priority="3">Action</th>

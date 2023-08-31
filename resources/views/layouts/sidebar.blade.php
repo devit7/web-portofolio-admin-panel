@@ -235,19 +235,19 @@
                       <li>
                         <a
                           href="#"
-                          class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                          class="block py-2 px-4 text-sm hover:bg-gray-600 text-gray-400 hover:text-white"
                           >Account settings</a
                         >
                       </li>
                     </ul>
                     <ul
-                      class="py-1 text-gray-700 dark:text-gray-300"
+                      class="py-1 text-gray-300"
                       aria-labelledby="dropdown"
                     >
                       <li>
                         <a
                           href="#"
-                          class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          class="flex items-center py-2 px-4 text-sm hover:bg-gray-600 hover:text-white"
                           ><svg
                             class="mr-2 w-5 h-5 text-gray-400"
                             fill="currentColor"
@@ -266,7 +266,7 @@
                       <li>
                         <a
                           href="#"
-                          class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          class="flex items-center py-2 px-4 text-sm  hover:bg-gray-600 hover:text-white"
                           ><svg
                             class="mr-2 w-5 h-5 text-gray-400"
                             fill="currentColor"
@@ -283,12 +283,12 @@
                       <li>
                         <a
                           href="#"
-                          class="flex justify-between items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          class="flex justify-between items-center py-2 px-4 text-sm hover:bg-gray-600 hover:text-white"
                         >
                           <span class="flex items-center">
                             <svg
                               aria-hidden="true"
-                              class="mr-2 w-5 h-5 text-primary-600 dark:text-primary-500"
+                              class="mr-2 w-5 h-5 text-primary-500"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                               xmlns="http://www.w3.org/2000/svg"
@@ -318,13 +318,13 @@
                       </li>
                     </ul>
                     <ul
-                      class="py-1 text-gray-700 dark:text-gray-300"
+                      class="py-1 text-gray-300"
                       aria-labelledby="dropdown"
                     >
                       <li>
                         <a
-                          href="#"
-                          class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          href="{{ route('auth.logout') }}"
+                          class="block py-2 px-4 text-sm rounded hover:bg-gray-600 hover:text-white"
                           >Sign out</a
                         >
                       </li>
@@ -373,7 +373,7 @@
                 <ul class="space-y-2">
                   <li>
                     <a
-                      href="/"
+                      href="/main"
                       class="flex items-center p-2 text-base font-medium rounded-lg text-white hover:bg-gray-700 group"
                     >
                       <svg
@@ -454,7 +454,7 @@
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/project"
                           class="flex  items-center p-2 pl-11 w-full text-base font-medium  rounded-lg transition duration-75 group  text-white hover:bg-gray-700"
                           >Project</a
                         >

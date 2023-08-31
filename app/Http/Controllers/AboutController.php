@@ -15,8 +15,13 @@ class AboutController extends Controller
     //read
     public function read()
     {
-        $about = About::all();
-        return view('about', compact('about'));
+        //check if the user is logged in
+        if (session()->has('user')) {
+            $about = About::all();
+            return view('about', compact('about'));
+        }else{
+            return redirect()->route('login');
+        }
     }
     //edit
     public function edit($id)

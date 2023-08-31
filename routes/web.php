@@ -5,6 +5,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\kdaController;
 use App\Http\Controllers\ProglanguageController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,12 +21,21 @@ use App\Http\Controllers\ProglanguageController;
 */
 
 Route::get('/', function () {
-    return view('main');
+    return view('login');
 });
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+Route::get('/main', function () {
+    return view('main');
+})->name('main');
+
+// Router Untuk Home
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+// Router Untuk Login
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'login'])->name('auth.login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('auth.logout');
+
 
 // Router Untuk User
 Route::get('/user', [UserController::class, 'read'])->name('user.read');
@@ -57,6 +69,14 @@ Route::post('/proglanguage/store', [ProglanguageController::class, 'store'])->na
 Route::get('/proglanguage/{id}/edit', [ProglanguageController::class, 'edit'])->name('proglanguage.edit');
 Route::put('/proglanguage/{id}', [ProglanguageController::class, 'update'])->name('proglanguage.update');
 Route::delete('/proglanguage/{id}', [ProglanguageController::class, 'destroy'])->name('proglanguage.destroy');
+
+// Router Untuk Project
+Route::get('/project', [ProjectController::class, 'read'])->name('project.read');
+Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
+Route::post('/project/store', [ProjectController::class, 'store'])->name('project.store'); // Changed the URL to /project/store
+Route::get('/project/{id}/edit', [ProjectController::class, 'edit'])->name('project.edit');
+Route::put('/project/{id}', [ProjectController::class, 'update'])->name('project.update');
+Route::delete('/project/{id}', [ProjectController::class, 'destroy'])->name('project.destroy');
 
 
 ?>

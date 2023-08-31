@@ -71,7 +71,7 @@
 				</thead>
 				<tbody>
 					@foreach ($user as $users)
-					<tr>
+					<tr >
 						<td>{{ $users->id }}</td>
 						<td>{{ $users->nama }}</td>
 						<td>{{ $users->username }}</td>
