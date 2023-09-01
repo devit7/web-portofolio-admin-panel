@@ -214,11 +214,11 @@
                     <div class="py-3 px-4">
                       <span
                         class="block text-sm font-semibold text-white"
-                        >Neil Sims</span
+                        >Admin Mpiie</span
                       >
                       <span
                         class="block text-sm  truncate text-white"
-                        >name@flowbite.com</span
+                        >admin@mpiie.com</span
                       >
                     </div>
                     <ul
@@ -428,7 +428,7 @@
                         <a
                           href="/home"
                           class="flex  items-center p-2 pl-11 w-full text-base font-medium  rounded-lg transition duration-75 group  text-white hover:bg-gray-700"
-                          >Home</a
+                          >Preview</a
                         >
                       </li>
                       <li>

@@ -54,6 +54,7 @@
 						<th data-priority="1">Id</th>
                         <th data-priority="2">Project</th>
                         <th data-priority="3">Nama program</th>
+                        <th data-priority="4">Action</th>
 					</tr>
 				</thead>
 				<tbody>
