@@ -37,6 +37,7 @@ class ProjectController extends Controller
             'title' => 'required',
             'description' => 'required',
             'image' => 'required',
+            'link_project'=>'required',
         ]);
 
         $project = Project::find($id);
@@ -44,6 +45,7 @@ class ProjectController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'image' => $request->image,
+            'link_project'=>$request->link_project,
         ]);
 
         if ($project) {
@@ -62,21 +64,26 @@ class ProjectController extends Controller
     //store
     public function store(Request $request)
     {
+        echo "masuk";
         $this->validate($request, [
             'title' => 'required',
             'description' => 'required',
             'image' => 'required',
+            'link_project'=>'required',
         ]);
-
+        echo "masuk112";
         $project = Project::create([
             'title' => $request->title,
             'description' => $request->description,
             'image' => $request->image,
+            'link_project'=>$request->link_project,
         ]);
-
+        
         if ($project) {
+            echo "berhasil";
             return redirect()->route('project.read')->with('success', 'Project data added successfully');
         } else {
+            echo "gagal";
             return redirect()->back()->withInput()->with('error', 'Some problem occurred, please try again');
         }
     }

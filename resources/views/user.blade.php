@@ -56,6 +56,7 @@
     <!--Container-->
 	<div class="container w-full  mt-10  mx-auto px-2">
 		<!--Card-->
+
 		<div id='recipients' class="p-8 mt-6 lg:mt-0 rounded shadow-lg bg-slate-100 ">
             <h2 class="text-2xl font-semibold ">User List</h2>
 			<table id="example" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
@@ -87,7 +88,7 @@
                                 {{-- dengan onclick --}}
                                 <button type="submit" class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg" onclick="return confirm('Are you sure you want to delete this user?')">Delete</button>
                             </form>	
-                            
+
 
                             <!-- Modal untuk popup -->
                             <div id="modalContainer_{{ $users->id }}" class="hidden fixed inset-0 flex items-center justify-center z-50">
@@ -131,6 +132,7 @@
 				</tbody>
 
 			</table>
+            
             
             
 
