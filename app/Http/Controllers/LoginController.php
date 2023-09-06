@@ -36,7 +36,7 @@ class LoginController extends Controller
                 // Create session
                 $request->session()->put('user', $user);
                 echo "Login success";
-                return redirect()->route('home');
+                return redirect()->route('main');
             } else {
                 echo "Login failed";
                 return back()->with('fail', 'Invalid password');

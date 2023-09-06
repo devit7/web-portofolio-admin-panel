@@ -50,7 +50,7 @@
                   </button>
                   <a href="#" class="flex items-center justify-between mr-4">
                     <img
-                      src="https://flowbite.s3.amazonaws.com/logo.svg"
+                      src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wYQI8TzZnjoeBn1Nql12I3fEx9GPFsUokWaGMbYuxWzdqfiWFBTPa0TW97bI6BdsqSqgwSi6KEN-q_0fbur9YwYOuyRA=s2560"
                       class="mr-3 h-8"
                       alt="Flowbite Logo"
                     />
@@ -107,7 +107,7 @@
                     <span class="sr-only">Open user menu</span>
                     <img
                       class="w-8 h-8 rounded-full"
-                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png"
+                      src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zsE5nZGKMA1nLf0R2nqNs3fb17z0r4gkfcW0YXJhER_LDMYH7E1V6nVISafso4fnWXvh0ml5DjuEc_ejvMp20ZRofTPw=s1600"
                       alt="user photo"
                     />
                   </button>

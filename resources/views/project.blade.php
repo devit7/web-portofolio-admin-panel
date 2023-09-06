@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5 w-full h-full rounded">
-    <h1 class="text-2xl text-gray-400 font-semibold mb-4">Hallo Sayang :3</h1>
+    <h1 class="text-2xl text-gray-400 font-semibold mb-4">Wellcome To Project Page</h1>
     <p class="text-gray-400">Semangat Sayang.</p>
     <br>
     <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">

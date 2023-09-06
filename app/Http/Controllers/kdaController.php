@@ -70,28 +70,12 @@ class kdaController extends Controller
             'link' => 'required',
         ]);
 
-        if($request->category == '1'){
-            $categoryValue = 'International';
-        }elseif($request->category == '2'){
-            $categoryValue = 'National';
-        }elseif($request->category == '3'){
-            $categoryValue = 'Challenge';
-        }elseif($request->category == '4') {
-            $categoryValue = 'Course';
-        }elseif($request->category == '5') {
-            $categoryValue = 'Internship';
-        }
-
-        if($request->level == '1'){
-            $levelValue = 'Competition';
-        }elseif($request->level == '2'){
-            $levelValue = 'Certification';
-        }
+        
 
 
         $kda = kda::create([
-            'category' => $categoryValue,
-            'level' => $levelValue,
+            'category' => $request->category,
+            'level' => $request->level,
             'description' => $request->description,
             'link' => $request->link,
         ]);
