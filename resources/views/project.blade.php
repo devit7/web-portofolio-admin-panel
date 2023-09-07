@@ -125,7 +125,7 @@
                             <tr class="border-b dark:border-gray-700">
                                 <th scope="row" class=" text-center px-2 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $loop->iteration }}</th>
                                 <td class="px-4 py-3">{{ $item->id }}</td>
-                                <td class="px-4 py-3">{{ $item->titel }}</td>
+                                <td class="px-4 py-3">{{ $item->title }}</td>
                                 <td class="px-4 py-3">{{ $item->description }}</td>
                                 <td class="px-4 py-3">{{ $item->image }}</td>
                                 <td class="px-4 py-3">{{ $item->link_project }}</td>
