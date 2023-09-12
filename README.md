@@ -2,6 +2,8 @@
 
 ![Privew](https://lh3.googleusercontent.com/drive-viewer/AITFw-xuORRf8GQA6qlWo6m0RopoV6XTs9KAHpIaTzjLbmKtUqXDbLfWpRkMPNuzBvarhctDylMc0o-2o_c60PEHNvE693BnVw=s1600)
 
+https://github.com/devit7/web-portofolio-admin-panel/assets/60412293/7a52575c-73ea-4827-a123-e41e20e49e64
+
 Admin Panel adalah sebuah aplikasi panel administrasi yang dirancang untuk memudahkan integrasi dengan database. Aplikasi ini dilengkapi dengan berbagai fitur, termasuk operasi CRUD (Create, Read, Update, Delete), sistem otentikasi Login dan Logout, serta tampilan yang sangat responsif.
 
 ## Teknologi yang Digunakan
