@@ -1,6 +1,6 @@
 # Admin Panel
 
-![Admin Panel Screenshot](https://drive.google.com/file/d/1ALwgUZX9urv_yzG1aWr8gmCj7hcPD8ni/view?usp=drive_link)
+[[![Video]](https://drive.google.com/file/d/1ALwgUZX9urv_yzG1aWr8gmCj7hcPD8ni/view?usp=drive_link)
 
 Admin Panel adalah sebuah aplikasi panel administrasi yang dirancang untuk memudahkan integrasi dengan database. Aplikasi ini dilengkapi dengan berbagai fitur, termasuk operasi CRUD (Create, Read, Update, Delete), sistem otentikasi Login dan Logout, serta tampilan yang sangat responsif.
 
