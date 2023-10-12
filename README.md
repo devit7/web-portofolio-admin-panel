@@ -1,6 +1,6 @@
 # Admin Panel
 
-![Privew](https://lh3.googleusercontent.com/drive-viewer/AITFw-xuORRf8GQA6qlWo6m0RopoV6XTs9KAHpIaTzjLbmKtUqXDbLfWpRkMPNuzBvarhctDylMc0o-2o_c60PEHNvE693BnVw=s1600)
+![Privew](https://iili.io/J27uzfs.png)
 
 https://github.com/devit7/web-portofolio-admin-panel/assets/60412293/7a52575c-73ea-4827-a123-e41e20e49e64
 
